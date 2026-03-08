@@ -1,7 +1,8 @@
 # preprocessx 🔧
 
 An automated machine learning preprocessing pipeline that handles the full data preparation workflow — from raw data to model-ready features — in just a few lines of code.
-https://pypi.org/project/vprojectx/
+
+#### [PyPI](https://pypi.org/project/vprojectx/)
 ---
 
 ## Table of Contents
