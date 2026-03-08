@@ -273,14 +273,14 @@ z = (x − mean) / std
 
 ## Design Decisions
 
-**Why split before imputing?**
+**Why split before imputing?**<br>
 If you compute fill values on the full dataset, test-set values influence the training statistics. Splitting first ensures the pipeline mirrors real-world conditions.
 
-**Why median for skewed columns?**
+**Why median for skewed columns?**<br>
 The mean is pulled toward extreme values in skewed distributions. The median is a more robust estimate of center when the data has a long tail.
 
-**Why IQR for skewed outliers and Z-score for symmetric?**
+**Why IQR for skewed outliers and Z-score for symmetric?**<br>
 Z-score assumes a roughly normal distribution. When data is skewed, the standard deviation is inflated by the tail, making Z-score unreliable. IQR is non-parametric and handles skewed data cleanly.
 
-**Why `drop='first'` in one-hot encoding?**
+**Why `drop='first'` in one-hot encoding?**<br>
 Dropping one dummy per column avoids perfect multicollinearity, which can destabilize linear models.
