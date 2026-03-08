@@ -1,0 +1,13 @@
+[project]
+name = "vprojectx"
+version = "0.1.0"
+description = "Automatic ML preprocessing pipeline"
+requires-python = ">=3.8"
+
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn"
+]
+[project.urls]
+Repository = "https://github.com/viraj-salunke/Vprojectx"
